@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header_gray">
+
+        </div>
+        <div class="container">
+            <div class="logo">
+                <img src="Imagenes/logo_prueba.png" alt="Logo de la tienda">
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Hombre</a></li>
+                    <li><a href="#">Mujer</a></li>
+                    <li><a href="#">Niño/a</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="#" class="favorite"><img src="heart-icon.png" alt="Favoritos"></a>
+                <a href="#" class="cart"><img src="cart-icon.png" alt="Carrito"></a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="registro-container">
+        <form action="/submit" method="post">
+          <label for="fname">Nombre:</label>
+          <input type="text" id="fname" name="fname" placeholder="Tu nombre.." required>
+      
+          <label for="lname">Apellido:</label>
+          <input type="text" id="lname" name="lname" placeholder="Tu apellido.." required>
+      
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" placeholder="Tu correo electrónico.." required>
+      
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" placeholder="Tu contraseña.." required>
+      
+          <button type="submit">Registrarse</button>
+        </form>
+      </div>
+
+    <footer>
+        <div class="container-footer">
+            <div class="left-section-footer">
+                <p class="store-name-footer">Ghosper</p>
+            </div>
+            <div class="right-section-footer">
+                <div class="location-footer">
+                    <img src="location-icon.png" alt="Ubicación">
+                    <p>Spain</p>
+                </div>
+                <p class="copyright-footer">© 2024 Ghosper. Todos los derechos reservados.</p>
+                <ul class="social-icons-footer">
+                    <li><a href="#"><img src="Imagenes/meta-logo-facebook-svgrepo-com.svg" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
