@@ -164,15 +164,16 @@ footer {
 }
 
 .location-footer {
-    display: flex;
-    justify-content: space-around;
+    display: flex; /* Mantenemos el display flex para alinear horizontalmente */
+    justify-content: space-between; /* Para separar los elementos horizontalmente */
+    align-items: center; /* Alineamos los elementos verticalmente */
 }
-
+.location-footer p {
+    margin: 0; /* Eliminamos el margen por defecto */
+}
 .location-footer img {
-    width: 20px;
-    margin-right: 5px;
+    margin-right: 10px; /* Espacio entre la imagen y el primer párrafo */
 }
-
 .social-icons-footer {
     list-style-type: none;
     margin: 0;
