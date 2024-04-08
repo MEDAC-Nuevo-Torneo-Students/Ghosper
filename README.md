@@ -1,2 +1,2 @@
 # ghosper
-#Comienzo de nuestra docu
+#Comienzo de nuestra documentación
