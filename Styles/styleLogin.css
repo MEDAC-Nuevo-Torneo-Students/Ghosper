@@ -54,6 +54,10 @@ nav ul {
     margin-bottom: 5px;
 }
 
+.sombra-input{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
 @media screen and (max-width: 768px) {
     .menu {
         display: none;
@@ -122,14 +126,14 @@ nav ul {
     box-sizing: border-box;
 }
 .form-group-checkbox{
-    display: flex; /* Alineación horizontal */
-    align-items: center; /* Alineación vertical */
+    display: flex;
+    align-items: center;
     margin-bottom: 2rem;
 }
 
 .form-group .checkbox label {
     font-size: 12px;
-    margin-left: 5px; /* Espacio entre el checkbox y el texto */
+    margin-left: 5px;
 }
 
 .btn-login {
@@ -139,14 +143,13 @@ nav ul {
     background-color: #1e2022;
     color: #fff;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
     font-size: 32px;
     transition: background-color 0.3s;
 }
 
 .btn-login:hover {
-    background-color: #0056b3;
+    background-color: #875c36;
 }
 
   /*FOOTER CODE*/
