@@ -1,4 +1,3 @@
-#README
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +6,8 @@
 </head>
 <body>
     <div class="container">
+        <h1>README</h1>
+        <br>
         <h1>Welcome to Project Ghosper!</h1>
         <p>This is an interesting project aimed at being able to carry all types of clothing at all types of prices for all types of people, we want to achieve it through our online store, where in addition to being able to buy our original clothing you can also buy and sell clothing from second hand, we have a reviews section so that all users can find the best offers.</p>
         <h2>Target Audience</h2>
