@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: #fff;
 }
 /*HEADER CODE*/
 .header_gray{
@@ -112,10 +113,49 @@ body {
     }
   }
 
-.clothes {
-    border-radius: 20px;
+.clothes_container {
     display: flex;
     flex-direction: row;
+}
+
+.clothes_container img {
+    width: 21rem;
+    height: 27rem;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+.label {
+    display: flex;
+    flex-direction: row;
+}
+
+.label p {
+    max-width: 100%;
+    position: relative;
+    left: 3px;
+    margin-right: 270px;
+}
+
+.icon_arrow {
+    border-radius: 100px;
+    width: 4rem;
+    position: relative;
+    left: 80rem;
+    top: auto;
+}
+
+.label_prices {
+    display: flex;
+    flex-direction: row;
+}
+
+.label_prices p {
+    max-width: 100%;
+    position: relative;
+    left: 3px;
+    margin-right: 341px;
+    margin-top: -10px;
 }
 
   /*FOOTER CODE*/
