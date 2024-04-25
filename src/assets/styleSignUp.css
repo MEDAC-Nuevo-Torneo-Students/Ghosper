@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+/*HEADER CODE*/
+.header_gray{
+    background-color: #bababa;
+    height: 5%;
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+}
+.header_gray a{
+  color: black;
+  text-decoration: none;
+}
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.icons a {
+    margin-left: 20px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 5px;
+}
+
+.sombra-input{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .menu-toggle.open .icon-bar {
+        background-color: #ff0000;
+    }
+
+    .menu-toggle.open .icon-bar:first-child {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-toggle.open .icon-bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.open .icon-bar:last-child {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+/* Estilos generales */
+/* Estilos generales */
+
+/* Estilos generales */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contenedor principal */
+  
+  .container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+  
+  /* Contenedor del formulario */
+  
+  .form-container {
+    text-align: center;
+  }
+  
+  /* Título del formulario */
+  
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold; /* Added for bold titles */
+    text-align: left; /* Added to left-align the titles */
+  }
+  
+  /* Párrafo informativo */
+  
+  p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Grupos de entrada */
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Etiquetas de los campos */
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold; /* Added for bold labels */
+    text-align: left; /* Added to left-align the labels */
+  }
+  
+  /* Campos de entrada */
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Added box-shadow */
+  }
+  
+  /* Casilla de verificación */
+  
+  .checkbox-group {
+    margin-bottom: 20px;
+  }
+  
+  input[type="checkbox"] {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  label[for="mantenerSesionIniciada"] {
+    display: inline-block;
+    color: #333;
+  }
+  
+  /* Botón de envío */
+  
+  button[type="submit"] {
+    display: block;
+    height: 20%;
+    width: 100%;
+    padding: 10px;
+    background-color: #1e2022;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Adjusted font size */
+    transition: background-color 0.3s;
+  }
+  
+/*ESTILOS FOOTER*/
+/* Existing styles */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .container-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 900px;
+    margin-left: 4.5rem;
+  }
+
+  .left-section-footer {
+    margin-right: 40rem;
+  }
+  
+  .store-name-footer {
+    margin-bottom: 15px; /* Espacio entre el nombre de la tienda y la ubicación */
+  }
+  
+  .right-section-footer {
+    display: flex;
+  }
+  
+  .social-icons-footer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-icons-footer li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons-footer li:last-child {
+    margin-right: 0;
+  }
+  
+  /* New styles for Spain and social icons */
+  
+  .sapin {
+    margin-top: 5px; /* Ajuste el espacio superior según sea necesario */
+    font-weight: bold; /* Opcional: agrega negrita a Sapin */
+  }
+  
+  .social-icons-footer img {
+    width: 30px; /* Aumenta el ancho a 30px */
+    height: 30px; /* Agrega altura para iconos cuadrados */
+  }
+  
+  .social-icons-footer img:hover {
+    opacity: 0.7;
+  }
+  
+  /* Estilo para el texto de derechos de autor */
+  .copyright-footer {
+    margin-top: 10px;
+  }
+  .bottom-footer{
+    display:flex;
+    justify-content:flex-start;
+  }
+  .copyright-footer{
+    margin-left: 25rem;
+  }
+  .location-footer{
+    margin-left: 4.5rem;
+  }
