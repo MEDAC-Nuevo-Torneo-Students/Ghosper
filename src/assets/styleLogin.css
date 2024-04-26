@@ -2,28 +2,19 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #fff;
 }
 /*HEADER CODE*/
 .header_gray{
-<<<<<<<< HEAD:Styles/styleLogin.css
     background-color: #bababa;
     height: 5%;
     width: 100%;
     justify-content: flex-end;
-========
-  background-color: #bababa;
-  height: 5%;
-  width: 100%;
-  justify-content: flex-end;
-  display: flex;
+    display: flex;
 }
 .header_gray a{
-  color: black;
-  text-decoration: none;
->>>>>>>> main:src/assets/styleIndex.css
-}
-
+    color: black;
+    text-decoration: none;
+  }
 .container-header {
     display: flex;
     justify-content: space-between;
@@ -102,7 +93,6 @@ nav ul {
     }
 }
 /* Estilos generales */
-<<<<<<<< HEAD:Styles/styleLogin.css
 .container {
     max-width: 400px;
     margin: 50px auto;
@@ -166,78 +156,6 @@ nav ul {
 }
 /*ESTILOS FOOTER*/
 /* Existing styles */
-========
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f8f8f8;
-  }
-  
-  .carousel {
-    width: 100%;
-    position: relative;
-  }
-  
-  .slide img {
-    width: 50%;
-  }
-
-  .slide {
-    display: flex;
-    flex-direction: row;
-  }
-
-  @media screen and (max-width: 600px) {
-    .registro-container {
-      width: 90%;
-    }
-  }
-
-.clothes_container {
-    display: flex;
-    flex-direction: row;
-}
-
-.clothes_container img {
-    width: 21rem;
-    height: 27rem;
-    margin-right: 30px;
-    border-radius: 10px;
-}
-
-.label {
-    display: flex;
-    flex-direction: row;
-}
-
-.label p {
-    max-width: 100%;
-    position: relative;
-    left: 3px;
-    margin-right: 270px;
-}
-
-.icon_arrow {
-    border-radius: 100px;
-    width: 4rem;
-    position: relative;
-    left: 80rem;
-    top: auto;
-}
-
-.label_prices {
-    display: flex;
-    flex-direction: row;
-}
-
-.label_prices p {
-    max-width: 100%;
-    position: relative;
-    left: 3px;
-    margin-right: 341px;
-    margin-top: -10px;
-}
->>>>>>>> main:src/assets/styleIndex.css
 
 footer {
     background-color: #000;
@@ -310,10 +228,4 @@ footer {
   }
   .location-footer{
     margin-left: 4.5rem;
-<<<<<<<< HEAD:Styles/styleLogin.css
   }
-========
-  }
-
-  
->>>>>>>> main:src/assets/styleIndex.css
