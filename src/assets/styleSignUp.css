@@ -2,25 +2,20 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #fff;
 }
 /*HEADER CODE*/
 .header_gray{
-  background-color: #bababa;
-  height: 5%;
-  width: 100%;
-  justify-content: flex-end;
-<<<<<<<< HEAD:Styles/styleIndex.css
-========
-  display: flex;
+    background-color: #bababa;
+    height: 5%;
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
 }
 .header_gray a{
   color: black;
   text-decoration: none;
->>>>>>>> main:src/assets/styleIndex.css
 }
-
-.container {
+.container-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,6 +59,10 @@ nav ul {
     margin-bottom: 5px;
 }
 
+.sombra-input{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
 @media screen and (max-width: 768px) {
     .menu {
         display: none;
@@ -93,78 +92,112 @@ nav ul {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 }
-/*BODY STYLES*/
 /* Estilos generales */
+/* Estilos generales */
+
+/* Estilos generales */
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     margin: 0;
-    background-color: #f8f8f8;
+    padding: 0;
   }
   
-  .carousel {
-    width: 100%;
-    position: relative;
-  }
+  /* Contenedor principal */
   
-  .slide img {
-    width: 50%;
-  }
-
-  .slide {
-    display: flex;
-    flex-direction: row;
-  }
-
-  @media screen and (max-width: 600px) {
-    .registro-container {
-      width: 90%;
-    }
-  }
-
-.clothes_container {
-    display: flex;
-    flex-direction: row;
-}
-
-.clothes_container img {
-    width: 21rem;
-    height: 27rem;
-    margin-right: 30px;
+  .container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
     border-radius: 10px;
-}
-
-.label {
-    display: flex;
-    flex-direction: row;
-}
-
-.label p {
-    max-width: 100%;
-    position: relative;
-    left: 3px;
-    margin-right: 270px;
-}
-
-.icon_arrow {
-    border-radius: 100px;
-    width: 4rem;
-    position: relative;
-    left: 80rem;
-    top: auto;
-}
-
-.label_prices {
-    display: flex;
-    flex-direction: row;
-}
-
-.label_prices p {
-    max-width: 100%;
-    position: relative;
-    left: 3px;
-    margin-right: 341px;
-    margin-top: -10px;
-}
+  }
+  
+  /* Contenedor del formulario */
+  
+  .form-container {
+    text-align: center;
+  }
+  
+  /* Título del formulario */
+  
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold; /* Added for bold titles */
+    text-align: left; /* Added to left-align the titles */
+  }
+  
+  /* Párrafo informativo */
+  
+  p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Grupos de entrada */
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Etiquetas de los campos */
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold; /* Added for bold labels */
+    text-align: left; /* Added to left-align the labels */
+  }
+  
+  /* Campos de entrada */
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Added box-shadow */
+  }
+  
+  /* Casilla de verificación */
+  
+  .checkbox-group {
+    margin-bottom: 20px;
+  }
+  
+  input[type="checkbox"] {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  label[for="mantenerSesionIniciada"] {
+    display: inline-block;
+    color: #333;
+  }
+  
+  /* Botón de envío */
+  
+  button[type="submit"] {
+    display: block;
+    height: 20%;
+    width: 100%;
+    padding: 10px;
+    background-color: #1e2022;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Adjusted font size */
+    transition: background-color 0.3s;
+  }
+  
+/*ESTILOS FOOTER*/
+/* Existing styles */
 
 footer {
     background-color: #000;
@@ -238,5 +271,3 @@ footer {
   .location-footer{
     margin-left: 4.5rem;
   }
-
-  
