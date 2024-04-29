@@ -1,54 +1,47 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
 }
 /*HEADER CODE*/
 .header_gray{
-<<<<<<<< HEAD:Styles/styleLogin.css
-    background-color: #bababa;
-    height: 5%;
-    width: 100%;
-    justify-content: flex-end;
-========
-  background-color: #bababa;
-  height: 5%;
-  width: 100%;
-  justify-content: flex-end;
-  display: flex;
+background-color: #bababa;
+height: 5%;
+width: 100%;
+justify-content: flex-end;
+display: flex;
 }
 .header_gray a{
-  color: black;
-  text-decoration: none;
->>>>>>>> main:src/assets/styleIndex.css
+color: black;
+text-decoration: none;
 }
 
-.container-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
 .logo img {
-    max-width: 100px;
+  max-width: 100px;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu li {
-    display: inline-block;
-    margin-right: 20px;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .menu li a {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  color: #333;
 }
 .submenu {
 	list-style: none;
@@ -91,268 +84,194 @@ nav ul {
 }
 
 .icons a {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
 
 .menu-toggle span {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin-bottom: 5px;
-}
-
-.sombra-input{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 5px;
 }
 
 @media screen and (max-width: 768px) {
-    .menu {
-        display: none;
-    }
+  .menu {
+      display: none;
+  }
 
-    .menu-toggle {
-        display: flex;
-    }
+  .menu-toggle {
+      display: flex;
+  }
 
-    .icons {
-        display: none;
-    }
+  .icons {
+      display: none;
+  }
 
-    .menu-toggle.open .icon-bar {
-        background-color: #ff0000;
-    }
+  .menu-toggle.open .icon-bar {
+      background-color: #ff0000;
+  }
 
-    .menu-toggle.open .icon-bar:first-child {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
+  .menu-toggle.open .icon-bar:first-child {
+      transform: rotate(-45deg) translate(-5px, 6px);
+  }
 
-    .menu-toggle.open .icon-bar:nth-child(2) {
-        opacity: 0;
-    }
+  .menu-toggle.open .icon-bar:nth-child(2) {
+      opacity: 0;
+  }
 
-    .menu-toggle.open .icon-bar:last-child {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
+  .menu-toggle.open .icon-bar:last-child {
+      transform: rotate(45deg) translate(-5px, -6px);
+  }
 }
+/*BODY STYLES*/
 /* Estilos generales */
-<<<<<<<< HEAD:Styles/styleLogin.css
-.container {
-    max-width: 400px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-}
-
-.title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
-.form-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-.form-group-checkbox{
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-
-.form-group .checkbox label {
-    font-size: 12px;
-    margin-left: 5px;
-}
-
-.btn-login {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #1e2022;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-size: 32px;
-    transition: background-color 0.3s;
-}
-
-.btn-login:hover {
-    background-color: #875c36;
-}
-/*ESTILOS FOOTER*/
-/* Existing styles */
-========
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f8f8f8;
-  }
-  
-  .carousel {
-    width: 100%;
-    position: relative;
-  }
-  
-  .slide img {
-    width: 50%;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f8f8f8;
+}
 
-  .slide {
-    display: flex;
-    flex-direction: row;
-  }
+.carousel {
+  width: 100%;
+  position: relative;
+}
 
-  @media screen and (max-width: 600px) {
-    .registro-container {
-      width: 90%;
-    }
+.slide img {
+  width: 50%;
+}
+
+.slide {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 600px) {
+  .registro-container {
+    width: 90%;
   }
+}
 
 .clothes_container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .clothes_container img {
-    width: 21rem;
-    height: 27rem;
-    margin-right: 30px;
-    border-radius: 10px;
+  width: 21rem;
+  height: 27rem;
+  margin-right: 30px;
+  border-radius: 10px;
 }
 
 .label {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .label p {
-    max-width: 100%;
-    position: relative;
-    left: 3px;
-    margin-right: 270px;
+  max-width: 100%;
+  position: relative;
+  left: 3px;
+  margin-right: 270px;
 }
 
 .icon_arrow {
-    border-radius: 100px;
-    width: 4rem;
-    position: relative;
-    left: 80rem;
-    top: auto;
+  border-radius: 100px;
+  width: 4rem;
+  position: relative;
+  left: 80rem;
+  top: auto;
 }
 
 .label_prices {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .label_prices p {
-    max-width: 100%;
-    position: relative;
-    left: 3px;
-    margin-right: 341px;
-    margin-top: -10px;
+  max-width: 100%;
+  position: relative;
+  left: 3px;
+  margin-right: 341px;
+  margin-top: -10px;
 }
->>>>>>>> main:src/assets/styleIndex.css
 
 footer {
-    background-color: #000;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  .container-footer {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    max-width: 900px;
-    margin-left: 4.5rem;
-  }
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
 
-  .left-section-footer {
-    margin-right: 40rem;
-  }
-  
-  .store-name-footer {
-    margin-bottom: 15px; /* Espacio entre el nombre de la tienda y la ubicación */
-  }
-  
-  .right-section-footer {
-    display: flex;
-  }
-  
-  .social-icons-footer {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .social-icons-footer li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  .social-icons-footer li:last-child {
-    margin-right: 0;
-  }
-  
-  /* New styles for Spain and social icons */
-  
-  .sapin {
-    margin-top: 5px; /* Ajuste el espacio superior según sea necesario */
-    font-weight: bold; /* Opcional: agrega negrita a Sapin */
-  }
-  
-  .social-icons-footer img {
-    width: 30px; /* Aumenta el ancho a 30px */
-    height: 30px; /* Agrega altura para iconos cuadrados */
-  }
-  
-  .social-icons-footer img:hover {
-    opacity: 0.7;
-  }
-  
-  /* Estilo para el texto de derechos de autor */
-  .copyright-footer {
-    margin-top: 10px;
-  }
-  .bottom-footer{
-    display:flex;
-    justify-content:flex-start;
-  }
-  .copyright-footer{
-    margin-left: 25rem;
-  }
-  .location-footer{
-    margin-left: 4.5rem;
-<<<<<<<< HEAD:Styles/styleLogin.css
-  }
-========
-  }
+.container-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 900px;
+  margin-left: 4.5rem;
+}
 
-  
->>>>>>>> main:src/assets/styleIndex.css
+.left-section-footer {
+  margin-right: 40rem;
+}
+
+.store-name-footer {
+  margin-bottom: 15px; /* Espacio entre el nombre de la tienda y la ubicación */
+}
+
+.right-section-footer {
+  display: flex;
+}
+
+.social-icons-footer {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons-footer li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons-footer li:last-child {
+  margin-right: 0;
+}
+
+/* New styles for Spain and social icons */
+
+.sapin {
+  margin-top: 5px; /* Ajuste el espacio superior según sea necesario */
+  font-weight: bold; /* Opcional: agrega negrita a Sapin */
+}
+
+.social-icons-footer img {
+  width: 30px; /* Aumenta el ancho a 30px */
+  height: 30px; /* Agrega altura para iconos cuadrados */
+}
+
+.social-icons-footer img:hover {
+  opacity: 0.7;
+}
+
+/* Estilo para el texto de derechos de autor */
+.copyright-footer {
+  margin-top: 10px;
+}
+.bottom-footer{
+  display:flex;
+  justify-content:flex-start;
+}
+.copyright-footer{
+  margin-left: 25rem;
+}
+.location-footer{
+  margin-left: 4.5rem;
+}
+
