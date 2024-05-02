@@ -6,15 +6,18 @@ body {
 }
 /*HEADER CODE*/
 .header_gray{
-background-color: #bababa;
-height: 5%;
-width: 100%;
-justify-content: flex-end;
-display: flex;
+  background-color: #bababa;
+  height: 5%;
+  width: 100%;
+  justify-content: flex-end;
+<<<<<<<< HEAD:Styles/styleIndex.css
+========
+  display: flex;
 }
 .header_gray a{
-color: black;
-text-decoration: none;
+  color: black;
+  text-decoration: none;
+>>>>>>>> main:src/assets/styleIndex.css
 }
 
 .container {
@@ -217,61 +220,62 @@ footer {
   margin-left: 4.5rem;
 }
 
-.left-section-footer {
-  margin-right: 40rem;
-}
+  .left-section-footer {
+    margin-right: 40rem;
+  }
+  
+  .store-name-footer {
+    margin-bottom: 15px; /* Espacio entre el nombre de la tienda y la ubicación */
+  }
+  
+  .right-section-footer {
+    display: flex;
+  }
+  
+  .social-icons-footer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-icons-footer li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons-footer li:last-child {
+    margin-right: 0;
+  }
+  
+  /* New styles for Spain and social icons */
+  
+  .sapin {
+    margin-top: 5px; /* Ajuste el espacio superior según sea necesario */
+    font-weight: bold; /* Opcional: agrega negrita a Sapin */
+  }
+  
+  .social-icons-footer img {
+    width: 30px; /* Aumenta el ancho a 30px */
+    height: 30px; /* Agrega altura para iconos cuadrados */
+  }
+  
+  .social-icons-footer img:hover {
+    opacity: 0.7;
+  }
+  
+  /* Estilo para el texto de derechos de autor */
+  .copyright-footer {
+    margin-top: 10px;
+  }
+  .bottom-footer{
+    display:flex;
+    justify-content:flex-start;
+  }
+  .copyright-footer{
+    margin-left: 25rem;
+  }
+  .location-footer{
+    margin-left: 4.5rem;
+  }
 
-.store-name-footer {
-  margin-bottom: 15px; /* Espacio entre el nombre de la tienda y la ubicación */
-}
-
-.right-section-footer {
-  display: flex;
-}
-
-.social-icons-footer {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.social-icons-footer li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.social-icons-footer li:last-child {
-  margin-right: 0;
-}
-
-/* New styles for Spain and social icons */
-
-.sapin {
-  margin-top: 5px; /* Ajuste el espacio superior según sea necesario */
-  font-weight: bold; /* Opcional: agrega negrita a Sapin */
-}
-
-.social-icons-footer img {
-  width: 30px; /* Aumenta el ancho a 30px */
-  height: 30px; /* Agrega altura para iconos cuadrados */
-}
-
-.social-icons-footer img:hover {
-  opacity: 0.7;
-}
-
-/* Estilo para el texto de derechos de autor */
-.copyright-footer {
-  margin-top: 10px;
-}
-.bottom-footer{
-  display:flex;
-  justify-content:flex-start;
-}
-.copyright-footer{
-  margin-left: 25rem;
-}
-.location-footer{
-  margin-left: 4.5rem;
-}
-
+  
