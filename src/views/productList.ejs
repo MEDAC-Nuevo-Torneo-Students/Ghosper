@@ -4,20 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product List</title>
+    <link rel="stylesheet" href="../assets/styleProductList.css">
 </head>
 <body>
-    <header></header>
+    <header>
+        <div class="header_gray">
+            <a href="#">Ayuda | </a> 
+            <a href="/login">Iniciar Sesión | </a> 
+            <a href="/signUp">Registrarse</a>
+         </div>
+
+        </div>
+        <div class="container">
+            <div class="logo">
+                <a href="/"><img src="../media/logo_prueba.png" alt="Logo de la tienda"></a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="/productList">Hombre</a></li>
+                    <li><a href="/productList">Mujer</a></li>
+                    <li><a href="/productList">Niño/a</a></li>
+                    <li><a href="/productList">Ofertas</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="#" class="favorite"><img width="30rem" src="../media/heart.svg" alt="Favoritos"></a>
+                <a href="#" class="cart"><img width="30rem" src="../media/basket.svg" alt="Carrito"></a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
     <main>
-        <header>
-            <h2></h2>
-            <div>
+        <header id="header-main">
+            <h2>TITULO SECCION</h2>
+            <div id="top-filter">
                 <p>Ocultar filtros</p>
-                <div>
-                    <img src="" alt="">
+                <div id="filter">
+                    <a href=""><img src="../media/filter.png" alt=""></a>
                 </div>
                 <p>Ordenar por</p>
-                <div>
-                    <img src="" alt="">
+                <div class="drop">
+                    <a class="dropbtn"><img src="../media/dropdown.png" alt=""></a>
+                    <div class="dropdown">
+                        <ul>
+                            <li>Destacados</li>
+                            <li>Más recientes</li>
+                            <li>Precio: Alto-Bajo</li>
+                            <li>Precio: Bajo-Alto</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
@@ -34,7 +73,7 @@
                 <p>Sexo</p>
             </div>
             <div>
-                <p>Filtrar por precio</p>
+                <p>Precio</p>
             </div>
             <div>
                 <p>Talla</p>
@@ -106,5 +145,24 @@
             </article>
         </section>
     </main>
+    <footer>
+        <div class="container-footer">
+            <div class="left-section-footer">
+                <p class="store-name-footer">GHOSPER</p>
+            </div>
+            <div class="right-section-footer">
+                <ul class="social-icons-footer">
+                    <li><a href="#"><img src="../media/meta-logo-facebook-svgrepo-com.svg" alt="Facebook"></a>
+                    </li>
+                    <li><a href="#"><img src="../media/twitter-3-svgrepo-com.svg" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="../media/instagram.svg" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <p class="location-footer">Spain</p>
+            <p class="copyright-footer">© 2024 Ghosper. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
