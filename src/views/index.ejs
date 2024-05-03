@@ -28,17 +28,54 @@
                     <li><a href="#">Ofertas</a></li>
                 </ul>
             </nav>
-            <div class="icons">
-                <a href="#" class="favorite"><img width="30rem" src="../media/heart.svg" alt="Favoritos"></a>
-                <a href="#" class="cart"><img width="30rem" src="../media/basket.svg" alt="Carrito"></a>
+            <a class="icons" href="#" class="favorite"><img width="30rem" src="../media/heart.svg" alt="Favoritos"></a>
+            <img class="icon-cart" width="30rem" src="../media/basket.svg" alt="Carrito">
+            <div class="container-cart-icon">
+                <div class="count-products">
+                    <span id="contador-productos">0</span>
+                </div>
             </div>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <div class="container-cart-products hidden-cart">
+                <div class="row-product hidden">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">Zapatos Nike</p>
+                            <span class="precio-producto-carrito">$80</span>
+                        </div>
+                        <svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+                    </div>
+                </div>
+
+                <div class="cart-total hidden">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$200</span>
+                </div>
+                <p class="cart-empty">El carrito está vacío</p>
             </div>
         </div>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </div>
     </header>
+
 
     <div class="carousel">
         <div class="slide">
@@ -49,16 +86,12 @@
     <br>
     <div class="index_container">
         <h2 class="subtitle">Sudaderas</h2>
-        <a href="">
-            <img class="icon_arrow" src="../media/icon_left.png">
-            <img class="icon_arrow" src="../media/icon_right.png" alt="">
-        </a>
 
         <div class="clothes_container">
             <img src="../media/hoodie.png" alt="">
-            <img src="../media/hoodie.png" alt="">
-            <img src="../media/hoodie.png" alt="">
-            <img src="../media/hoodie.png" alt="">
+            <img src="../media/blue_hoodie.jpg" alt="">
+            <img src="../media/watch_hoodie.webp" alt="">
+            <img src="../media/navy_hoodie.webp" alt="">
         </div>
 
         <div class="label">
@@ -69,17 +102,18 @@
         </div>
 
         <div class="label_prices">
+            <button class="btn-add-cart">Añadir al carrito</button>
             <p>€60</p>
+            <button class="btn-add-cart">Añadir al carrito</button>
             <p>€60</p>
+            <button class="btn-add-cart">Añadir al carrito</button>
             <p>€60</p>
+            <button class="btn-add-cart">Añadir al carrito</button>
             <p>€60</p>
         </div>
         <br>
         <div>
             <h2 class="subtitle">Pantalones</h2>
-                <img class="icon_arrow" src="../media/icon_left.png">
-                <img class="icon_arrow" src="../media/icon_right.png" alt="">
-
 
             <div class="clothes_container">
                 <img src="../media/trousers.webp" alt="">
