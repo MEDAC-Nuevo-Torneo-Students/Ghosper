@@ -147,14 +147,6 @@ body {
   margin-right: 270px;
 }
 
-.icon_arrow {
-  border-radius: 100px;
-  width: 4rem;
-  position: relative;
-  left: 80rem;
-  top: auto;
-}
-
 .label_prices {
   display: flex;
   flex-direction: row;
@@ -208,13 +200,6 @@ footer {
 
 .social-icons-footer li:last-child {
   margin-right: 0;
-}
-
-/* New styles for Spain and social icons */
-
-.sapin {
-  margin-top: 5px; /* Ajuste el espacio superior según sea necesario */
-  font-weight: bold; /* Opcional: agrega negrita a Sapin */
 }
 
 .social-icons-footer img {
