@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ghosper</title>
     <link rel="stylesheet" href="../assets/styleIndex.css">
+    <script src="../Js/basket.js"></script>
 </head>
 
 <body>
     <header>
         <div class="header_gray">
-            <a href="#">Ayuda | </a>
-            <a href="/login">Iniciar Sesión | </a>
+            <a href="#">Ayuda |</a>
+            <a href="/login">Iniciar Sesión |</a>
             <a href="/signUp">Registrarse</a>
         </div>
 
@@ -43,72 +44,113 @@
         </div>
     </div>
     <br>
-    <div class="index_container">
-        <h2 class="subtitle">Sudaderas</h2>
+    <h2 class="index_container">Sudaderas</h2>
 
-        <div class="clothes_container">
-            <img src="../media/hoodie.png" alt="">
-            <img src="../media/blue_hoodie.jpg" alt="">
-            <img src="../media/nike_hoodie.jpg" alt="">
-            <img src="../media/gray_hoodie.jpg" alt="">
-        </div>
+    <div class="clothes_container">
+        <div class="item">
+            <figure>
+                <img src="../media/hoodie.png" alt="producto">
+            </figure>
 
-        <div class="label">
-            <p>SUDADERA1</p>
-            <p>SUDADERA2</p>
-            <p>SUDADERA3</p>
-            <p>SUDADERA4</p>
-        </div>
-
-        <div class="label_prices">
-            <button class="btn-add-cart">Añadir al carrito</button>
-            <p>€60</p>
-            <button class="btn-add-cart">Añadir al carrito</button>
-            <p>€60</p>
-            <button class="btn-add-cart">Añadir al carrito</button>
-            <p>€60</p>
-            <button class="btn-add-cart">Añadir al carrito</button>
-            <p>€60</p>
-        </div>
-        <br>
-        <div>
-            <h2 class="subtitle">Pantalones</h2>
-
-            <div class="clothes_container">
-                <img src="../media/trousers.webp" alt="">
-                <img src="../media/gray_trouser.jpg" alt="">
-                <img src="../media/black_trouser.jpg" alt="">
-                <img src="../media/shorts.jpg" alt="">
+            <div class="info_product">
+                <h2>Sudadera1</h2>
+                <p class="price">€60</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
             </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../media/blue_hoodie.jpg" alt="producto">
+            </figure>
 
-            <div class="label">
-                <p>PANTALÓN1</p>
-                <p>PANTALÓN2</p>
-                <p>PANTALÓN3</p>
-                <p>PANTALÓN4</p>
+            <div class="info_product">
+                <h2>Sudadera2</h2>
+                <p class="price">€60</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
             </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../media/nike_hoodie.jpg" alt="producto">
+            </figure>
 
-            <div class="label_prices">
-                <p>€80</p>
-                <p>€80</p>
-                <p>€80</p>
-                <p>€80</p>
+            <div class="info_product">
+                <h2>Sudadera3</h2>
+                <p class="price">€60</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../media/gray_hoodie.jpg" alt="producto">
+            </figure>
+
+            <div class="info_product">
+                <h2>Sudadera4</h2>
+                <p class="price">€60</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
             </div>
         </div>
     </div>
+    <br>
+    <h2 class="index_container">Pantalones</h2>
+
+    <div class="clothes_container">
+        <div class="item">
+            <figure>
+                <img src="../media/trousers.webp" alt="">
+            </figure>
+
+            <div class="info_product">
+                <h2>Pantalón1</h2>
+                <p class="price">€80</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../media/gray_trouser.jpg" alt="">
+            </figure>
+
+            <div class="info_product">
+                <h2>Pantalón2</h2>
+                <p class="price">€80</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../media/black_trouser.jpg" alt="">
+            </figure>
+
+            <div class="info_product">
+                <h2>Pantalón3</h2>
+                <p class="price">€80</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../media/shorts.jpg" alt="">
+            </figure>
+
+            <div class="info_product">
+                <h2>Pantalón3</h2>
+                <p class="price">€80</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+    <br>
+
     <footer>
-        <div class="container-footer">
-            <div class="left-section-footer">
-                <p class="store-name-footer">GHOSPER</p>
-            </div>
-            <div class="right-section-footer">
-                <ul class="social-icons-footer">
-                    <li><a href="#"><img src="../media/meta-logo-facebook-svgrepo-com.svg" alt="Facebook"></a>
-                    </li>
-                    <li><a href="#"><img src="../media/twitter-3-svgrepo-com.svg" alt="Twitter"></a></li>
-                    <li><a href="#"><img src="../media/instagram.svg" alt="Instagram"></a></li>
-                </ul>
-            </div>
+        <div class="right-section-footer">
+            <p class="store-name-footer">GHOSPER</p>
+            <ul class="social-icons-footer">
+                <a href="#"><img src="../media/meta-logo-facebook-svgrepo-com.svg" alt="Facebook"></a>
+                <a href="#"><img src="../media/twitter-3-svgrepo-com.svg" alt="Twitter"></a>
+                <a href="#"><img src="../media/instagram.svg" alt="Instagram"></a>
+            </ul>
         </div>
         <div class="bottom-footer">
             <p class="location-footer">Spain</p>

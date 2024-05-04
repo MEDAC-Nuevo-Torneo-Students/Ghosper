@@ -4,17 +4,21 @@ body {
   font-family: Arial, sans-serif;
   background-color: #fff;
 }
+
 /*HEADER CODE*/
-.header_gray{
-background-color: #bababa;
-height: 5%;
-width: 100%;
-justify-content: flex-end;
-display: flex;
+.header_gray {
+  background-color: #bababa;
+  height: 5%;
+  width: 100%;
+  justify-content: flex-end;
+  display: flex;
 }
-.header_gray a{
-color: black;
-text-decoration: none;
+
+.header_gray a {
+  color: black;
+  text-decoration: none;
+  margin: 10px;
+
 }
 
 .container {
@@ -63,33 +67,34 @@ nav ul {
 
 @media screen and (max-width: 768px) {
   .menu {
-      display: none;
+    display: none;
   }
 
   .menu-toggle {
-      display: flex;
+    display: flex;
   }
 
   .icons {
-      display: none;
+    display: none;
   }
 
   .menu-toggle.open .icon-bar {
-      background-color: #ff0000;
+    background-color: #ff0000;
   }
 
   .menu-toggle.open .icon-bar:first-child {
-      transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-5px, 6px);
   }
 
   .menu-toggle.open .icon-bar:nth-child(2) {
-      opacity: 0;
+    opacity: 0;
   }
 
   .menu-toggle.open .icon-bar:last-child {
-      transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg) translate(-5px, -6px);
   }
 }
+
 /*BODY STYLES*/
 /* Estilos generales */
 body {
@@ -112,52 +117,51 @@ body {
   flex-direction: row;
 }
 
-@media screen and (max-width: 600px) {
-  .registro-container {
-    width: 90%;
-  }
-}
-
 .index_container {
   margin: 30px;
 }
 
-
 .clothes_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+}
+
+.item img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 10px 10px 10px 10px;
+  transition: all .5s;
+}
+
+.item:hover img {
+  transform: scale(1.2);
+}
+
+.item figure {
+  overflow: hidden;
+}
+
+.info_product {
+  padding: 2px 40px;
+  line-height: 0.5;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-.clothes_container img {
-  width: 21rem;
-  height: 27rem;
-  margin-right: 30px;
-  border-radius: 10px;
+.price {
+  font-size: 18px;
 }
 
-.label {
-  display: flex;
-  flex-direction: row;
-}
-
-.label p {
-  max-width: 100%;
-  position: relative;
-  left: 3px;
-  margin-right: 270px;
-}
-
-.label_prices {
-  display: flex;
-  flex-direction: row;
-}
-
-.label_prices p {
-  max-width: 100%;
-  position: relative;
-  left: 3px;
-  margin-right: 341px;
-  margin-top: -10px;
+.info_product button {
+  border: none;
+  background: none;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 10px;
+  cursor: pointer;
 }
 
 footer {
@@ -167,62 +171,45 @@ footer {
   text-align: center;
 }
 
-.container-footer {
+.store-name-footer {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  max-width: 900px;
+  max-width: 50px;
   margin-left: 4.5rem;
-}
-
-.left-section-footer {
-  margin-right: 40rem;
-}
-
-.store-name-footer {
-  margin-bottom: 15px; /* Espacio entre el nombre de la tienda y la ubicación */
-}
-
-.right-section-footer {
-  display: flex;
+  margin-bottom: 15px;
 }
 
 .social-icons-footer {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  margin-right: 30px;
 }
 
 .social-icons-footer li {
-  display: inline-block;
   margin-right: 10px;
 }
 
-.social-icons-footer li:last-child {
-  margin-right: 0;
-}
-
 .social-icons-footer img {
-  width: 30px; /* Aumenta el ancho a 30px */
-  height: 30px; /* Agrega altura para iconos cuadrados */
+  width: 55px;
+  height: 40px;
 }
 
 .social-icons-footer img:hover {
   opacity: 0.7;
+  transition: all .5s;
 }
 
 /* Estilo para el texto de derechos de autor */
-.copyright-footer {
-  margin-top: 10px;
-}
-.bottom-footer{
-  display:flex;
-  justify-content:flex-start;
-}
-.copyright-footer{
-  margin-left: 25rem;
-}
-.location-footer{
-  margin-left: 4.5rem;
+
+.bottom-footer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
 }
 
+.location-footer {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 4.5rem;
+}
