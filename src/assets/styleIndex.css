@@ -38,6 +38,129 @@ nav ul {
   padding: 0;
 }
 
+.icon-cart{
+  width: 40px;
+  height: 40px;
+  stroke: #000;
+}
+
+.icon-cart:hover{
+  cursor: pointer;
+}
+
+img{
+  max-width: 100%;
+}
+
+.container-icon{
+  position: relative;
+  display: flex;
+  transform: translateX(-4rem);
+  gap: 1rem;
+  z-index: 1;
+}
+
+.count-products{
+  position: absolute;
+  top: 55%;
+  right: 0;
+
+  background-color: #000;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+#contador-productos{
+  font-size: 12px;
+}
+
+.container-cart-products{
+  position: absolute;
+  top: 50px;
+  right: 0;
+
+  background-color: #fff;
+  width: 400px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+  border-radius: 10px;
+  
+}
+
+.cart-product{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+  display: flex;
+  justify-content: space-between;
+  flex: 0.8;
+  align-items: center;
+}
+
+.titulo-producto-carrito{
+  font-size: 20px;
+}
+
+.precio-producto-carrito{
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.icon-close{
+  width: 25px;
+  height: 25px;
+}
+
+.icon-close:hover{
+  stroke: red;
+  cursor: pointer;
+}
+
+.cart-total{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.cart-total h3{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.total-pagar{
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.hidden-cart{
+  display: none;
+}
+
+.cart-empty{
+  padding: 20px;
+  text-align: center;
+}
+
 .menu li {
   display: inline-block;
   margin-right: 20px;
@@ -46,10 +169,6 @@ nav ul {
 .menu li a {
   text-decoration: none;
   color: #333;
-}
-
-.icons a {
-  margin-left: 20px;
 }
 
 .menu-toggle {
@@ -171,9 +290,12 @@ footer {
   text-align: center;
 }
 
-.store-name-footer {
+.right-section-footer {
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
+}
+
+.store-name-footer {
   max-width: 50px;
   margin-left: 4.5rem;
   margin-bottom: 15px;
@@ -182,12 +304,8 @@ footer {
 .social-icons-footer {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: flex-start;
-  margin-right: 30px;
-}
-
-.social-icons-footer li {
-  margin-right: 10px;
+  justify-content: flex-end;
+  transform: translateX(90rem);
 }
 
 .social-icons-footer img {

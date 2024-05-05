@@ -2,7 +2,7 @@
   "name": "ghosper",
   "description": "<!DOCTYPE html>\r <html lang=\"en\">\r <head>\r     <meta charset=\"UTF-8\">\r     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r </head>\r <body>\r     <div class=\"container\">\r         <h1>README</h1>\r         <br>\r         <h1>Welcome to Project Ghosper!</h1>\r         <p>This is an interesting project aimed at being able to carry all types of clothing at all types of prices for all types of people, we want to achieve it through our online store, where in addition to being able to buy our original clothing you can also buy and sell clothing from second hand, we have a reviews section so that all users can find the best offers.</p>\r         <h2>Target Audience</h2>\r         <p>Our project is aimed at all types of people, we have all types of clothing and all sizes but it is especially aimed at young boys and girls who like to enjoy a wide variety of clothing.</p>\r         <h2>Client Benefits</h2>\r         <p>By using our application, the customer will be able to obtain exclusive seasonal clothing with a 15% discount on the first purchase, and if what they want is to enjoy the second-hand section, during the first month from their registration, they will enjoy free shipping your clothes</p>\r         <h2>Contributors</h2>\r         <p>We thank all contributors for their dedication and effort on this project:</p>\r         <ul>\r             <li>Contributor Name 1</li>\r             <li>Contributor Name 2</li>\r             <li>Contributor Name 3</li>\r         </ul>\r     </div>\r </body>\r </html>",
   "version": "1.0.0",
-  "main": "ghosper/index.js",
+  "main": "ghosper/basket.js",
   "scripts": {
     "dev": "nodemon --exec node ghosper/index.js"
   },

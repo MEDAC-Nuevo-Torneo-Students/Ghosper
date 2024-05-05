@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ghosper</title>
     <link rel="stylesheet" href="../assets/styleIndex.css">
-    <script src="../Js/basket.js"></script>
 </head>
 
 <body>
@@ -29,10 +28,39 @@
                     <li><a href="#">Ofertas</a></li>
                 </ul>
             </nav>
-            <a class="icons" href="#" class="favorite"><img width="30rem" src="../media/heart.svg" alt="Favoritos"></a>
-            <img class="icon-cart" width="30rem" src="../media/basket.svg" alt="Carrito">
-            <div class="container-cart-icon">
+            
+
+            <div class="container-icon">
+                <img width="30rem" src="../media/heart.svg" alt="Favoritos">
+                <div class="container-cart-icon">
+                    <img class="icon-cart" width="30rem" src="../media/basket.svg" alt="Carrito">
+                    <div class="count-products">
+                        <span id="contador-productos">0</span>
+                    </div>
+                </div>
+                <div class="container-cart-products hidden-cart">
+                    <div class="row-product hidden">
+                        <div class="cart-product">
+                            <div class="info-cart-product">
+                                <span class="cantidad-producto-carrito">1</span>
+                                <p class="titulo-producto-carrito">Sudadera1</p>
+                                <span class="precio-producto-carrito">€60</span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="icon-close">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="cart-total hidden">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">€200</span>
+                    </div>
+                    <p class="cart-empty">El carrito está vacio</p>
+                </div>
             </div>
+
+        </div>
         </div>
     </header>
 
@@ -157,7 +185,7 @@
             <p class="copyright-footer">© 2024 Ghosper. Todos los derechos reservados.</p>
         </div>
     </footer>
-
+    <script src="../Js/basket.js"></script>
 </body>
 
 </html>
