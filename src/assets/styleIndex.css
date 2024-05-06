@@ -305,7 +305,7 @@ footer {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  transform: translateX(90rem);
+  transform: translateX(70rem);
 }
 
 .social-icons-footer img {
