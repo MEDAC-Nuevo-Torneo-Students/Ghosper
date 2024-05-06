@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# ghosper
-#Comienzo de nuestra documentación
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,4 +25,3 @@
 </body>
 </html>
 
->>>>>>> main
