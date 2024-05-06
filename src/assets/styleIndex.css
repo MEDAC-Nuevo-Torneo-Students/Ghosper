@@ -3,21 +3,36 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: #fff;
+  transition: 0.5s ease-in-out;
+  background-color: #f2f2f2;
+  color: #252525;
 }
 /*HEADER CODE*/
+.header_gray {
+  background-color: #111;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  text-transform: uppercase;  
+}
+
+.header_gray a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
 .header_gray{
   background-color: #bababa;
   height: 5%;
   width: 100%;
   justify-content: flex-end;
-<<<<<<<< HEAD:Styles/styleIndex.css
-========
   display: flex;
 }
 .header_gray a{
   color: black;
   text-decoration: none;
->>>>>>>> main:src/assets/styleIndex.css
 }
 
 .container {
@@ -25,11 +40,47 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  background-color: #fff;
 }
 
 .logo img {
   max-width: 100px;
 }
+
+#container-darkMode{
+  background-color: #f8f8f8;
+  position: relative;
+  width: 80px;
+  height: 40px;
+  box-shadow: inset 4px 4px 6px #cecece,
+              inset -4px -4px 6px #fff;
+  margin: 0px auto;
+  margin-top: 350px;
+  border-radius: 25px;
+  cursor: pointer;  
+}
+
+.toggle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  transform: scale(.7);
+  background-color: linear-gradient(145deg, #D8D8D8, #ffff);
+  border-radius: 25px;
+  box-shadow: 3px 3px 8px #c4c4c4,
+              -3px -3px 8px #c4c4c4; 
+}
+
+.container.active .toggle{
+  left: 40px;
+}
+
+body.active {
+  background-color: rgb(23, 23, 23);
+}
+
 
 nav ul {
   list-style: none;
@@ -37,100 +88,69 @@ nav ul {
   padding: 0;
 }
 
+.menu {
+  display: flex;
+  flex-direction: row; /* Cambiar de column a row para alinear horizontalmente */
+} 
+
 .menu li {
-  display: inline-block;
+  position: relative;
   margin-right: 20px;
+  list-style: none;
 }
 
 .menu li a {
   text-decoration: none;
-  color: #333;
+  color: #000000;
 }
+
 .submenu {
-	list-style: none;
-	display: flex;
-	justify-content: space-around;
-}
-
-.submenu > li > a{
-	display: block;
-	padding: 15px 20px;
-	color: white;
-	text-decoration: none;
-}
-
-.submenu > li:hover{
-	background-color: red;
-}
-
-.submenu li:hover .menu-vertical{
-	display: block;
-}
-
-.menu-vertical{
-	position: absolute;
-	display: none;
-	list-style: none;
-	width: 200px;
-	background-color: rgba(0, 0, 0, .5);
-}
-
-.menu-vertical li:hover{
-	background-color: black;
-}
-
-.menu-vertical li a{
-	display: block;
-	color: white;
-	text-decoration: none;
-	padding: 15px 15px 15px 20px;
-}
-
-.icons a {
-  margin-left: 20px;
-}
-
-.menu-toggle {
+  position: fixed;
+  top: 40px;
+  margin-top: 80px;
+  right: 0;
   display: none;
+  z-index: 1;
+  flex-direction: row; /* Cambiar de column a row para alinear horizontalmente */
+  width: 100vw;
+  margin-left: 3rem;
+}
+
+.submenu > li {
+  display: flex;
   flex-direction: column;
-  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  flex-grow: 1;
 }
 
-.menu-toggle span {
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-  margin-bottom: 5px;
+.submenu > li > a {
+  display: block;
+  padding: 15px 20px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-  .menu {
-      display: none;
-  }
+.menu li:hover .submenu {
+  display: flex;
+}
 
-  .menu-toggle {
-      display: flex;
-  }
+.menu-vertical {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 200px;
+  background-color: rgb(255, 255, 255);
+}
 
-  .icons {
-      display: none;
-  }
+.menu-vertical li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 15px 20px;
+}
 
-  .menu-toggle.open .icon-bar {
-      background-color: #ff0000;
-  }
-
-  .menu-toggle.open .icon-bar:first-child {
-      transform: rotate(-45deg) translate(-5px, 6px);
-  }
-
-  .menu-toggle.open .icon-bar:nth-child(2) {
-      opacity: 0;
-  }
-
-  .menu-toggle.open .icon-bar:last-child {
-      transform: rotate(45deg) translate(-5px, -6px);
-  }
+.menu-vertical li:hover {
+  background-color: rgb(255, 255, 255);
 }
 /*BODY STYLES*/
 /* Estilos generales */
@@ -277,5 +297,3 @@ footer {
   .location-footer{
     margin-left: 4.5rem;
   }
-
-  
