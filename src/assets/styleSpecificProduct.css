@@ -184,12 +184,20 @@ section{
     border-radius: 12px;
     margin-bottom: 15px;
 }
+#first-section :hover{
+  transform: scale(1.20);
+  transition: all .3s;
+  cursor: pointer;
+}
 
 #second-section{
     margin-top: 20px;
     margin-left: 15px;
 }
-
+#second-section :hover{
+  transform: scale(1.03);
+  transition: all .5s;
+}
 #second-section img{
     width: 42vw;
     height: 49vw;
@@ -202,6 +210,11 @@ section{
 #subproduct{
     display: flex;
     margin-bottom: 45px;
+}
+#subproduct :hover{
+  transform: scale(1.25);
+  transition: all .2s;
+  cursor: pointer;
 }
 #subproduct img{
     width: 3vw;
@@ -222,6 +235,11 @@ section{
     margin-bottom: 0;
 }
 
+#fourth-section :hover{
+  transform: scale(1.15);
+  transition: all .2s;
+  cursor: pointer;
+}
 #button1{
     display: flex;
     justify-content: center;
@@ -233,6 +251,11 @@ section{
     border: none;
     border-radius: 40px;
     background-color: #b6b3ad;
+    cursor: pointer;
+}
+#buttons :hover{
+  transform: scale(1.15);
+  transition: all .5s;
 }
 #button2{
     display: flex;
@@ -245,7 +268,9 @@ section{
     border: solid 1px black;
     border-radius: 40px;
     background-color: white;
+    cursor: pointer;
 }
+
 button p{
     font-size:medium;
 }

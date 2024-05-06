@@ -245,7 +245,10 @@ article :first-child{
   width: 410px;
   height: 470px;
 }
-
+article a :hover{
+  transform: scale(1.05);
+  transition: all .5s;
+}
 .subproduct img{
   border-radius: 2px;
   width: 40px;

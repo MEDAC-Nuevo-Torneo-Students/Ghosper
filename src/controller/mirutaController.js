@@ -1,11 +1,17 @@
 const getIndex = (req, res) => {
     res.render('index');
 };
+
 const getLogin = (req, res) => {
     res.render('login');
 };
+
 const getSignUp = (req, res) => {
     res.render('signUp');
+};
+
+const getGhosperClub = (req, res) => {
+    res.render('ghosperClub');
 };
 
 const getProductList = (req, res) => {
@@ -40,6 +46,7 @@ module.exports = {
     getIndex,
     getLogin,
     getSignUp,
+    getGhosperClub,
     getProductList,
     getDunk1,
     getDunk2,
