@@ -14,8 +14,8 @@ const getGhosperClub = (req, res) => {
     res.render('ghosperClub');
 };
 
-const getProductList = (req, res) => {
-    res.render('productList');
+const getdunk_man = (req, res) => {
+    res.render('dunk_man');
 };
 
 const getDunk1 = (req, res) => {
@@ -42,16 +42,33 @@ const getDunk6 = (req, res) => {
     res.render('dunk6');
 };
 
+const getfeautured_man = (req, res) => {
+    res.render('feautured_man');
+};
+const getclothes_man = (req, res) => {
+    res.render('clothes_man');
+};
+const getsport_man = (req, res) => {
+    res.render('sport_man');
+};
+const getaccesories_man = (req, res) => {
+    res.render('accesories_man');
+};
+
 module.exports = {
     getIndex,
     getLogin,
     getSignUp,
     getGhosperClub,
-    getProductList,
+    getdunk_man,
     getDunk1,
     getDunk2,
     getDunk3,
     getDunk4,
     getDunk5,
     getDunk6,
+    getfeautured_man,
+    getclothes_man,
+    getsport_man,
+    getaccesories_man,
 };
