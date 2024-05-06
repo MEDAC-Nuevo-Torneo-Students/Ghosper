@@ -237,14 +237,19 @@ body {
 }
 
 .index_container {
+  display: grid;
   margin: 30px;
 }
 
 .clothes_container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 0;
   grid-row-gap: 0;
+}
+
+#trousers {
+  display: block;
 }
 
 .item img {
