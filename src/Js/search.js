@@ -1,17 +1,13 @@
 function search() {
-    // Obtener el término de búsqueda
-    var searchTerm = document.getElementById('searchInput').value.toLowerCase();
+    var input = document.getElementById("searchInput").value.toLowerCase();
+    var items = document.querySelectorAll(".info_product");
 
-    // Obtener todos los elementos a buscar
-    var elements = document.getElementsByClassName('element');
-
-    // Iterar sobre los elementos y ocultar los que no coincidan con el término de búsqueda
-    for (var i = 0; i < elements.length; i++) {
-        var elementName = elements[i].innerText.toLowerCase();
-        if (elementName.includes(searchTerm)) {
-            elements[i].style.display = 'block'; // Mostrar elementos que coincidan
+    items.forEach(function(item) {
+        var productName = item.querySelector("h2").innerText.toLowerCase();
+        if (productName.includes(input)) {
+            item.parentElement.style.display = "block";
         } else {
-            elements[i].style.display = 'none'; // Ocultar elementos que no coincidan
+            item.parentElement.style.display = "none";
         }
-    }
+    });
 }

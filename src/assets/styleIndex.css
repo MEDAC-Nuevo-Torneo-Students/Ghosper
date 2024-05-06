@@ -138,6 +138,35 @@ nav ul {
   background-color: rgb(255, 255, 255);
 }
 
+/*Searching style*/
+#searchInput {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  width: 250px; /* Ancho fijo del input */
+  box-sizing: border-box;
+  margin: 0;
+  display: inline-block;
+}
+
+#searchButton {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top; /* Alinear verticalmente con el input */
+}
+
+#searchButton:hover {
+  background-color: #000000;
+}
+
 .icon-cart{
   width: 40px;
   height: 40px;
@@ -289,6 +318,11 @@ img{
     display: none;
   }
 
+  .menu li {
+    display: inline-block;
+    margin-right: 10px; /* Reducir el margen entre elementos de menú */
+}
+
   .menu-toggle {
     display: flex;
   }
@@ -296,6 +330,10 @@ img{
   .icons {
     display: none;
   }
+
+  .menu-toggle span {
+    width: 20px; /* Reducir el tamaño de las barras del menú desplegable */
+}
 
   .menu-toggle.open .icon-bar {
     background-color: #ff0000;
