@@ -1,115 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ghosper</title>
 </head>
+
 <body>
     <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Ropa</title>
-    <link rel="stylesheet" href="../assets/styleSignUp.css">
-</head>
-<body>
-    <header>
-        <div class="header_gray">
-           <a href="#">Ayuda | </a> 
-           <a href="/login">Iniciar Sesión | </a> 
-           <a href="/signUp">Registrarse</a>
-        </div>
-        <div class="container-header">
-            <div class="logo">
-                <a href="/"><img src="../media/logo_prueba.png" alt="Logo de la tienda"></a>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tienda de Ropa</title>
+        <link rel="stylesheet" href="../assets/styleSignUp.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="header_gray">
+                <a href="#">Ayuda | </a>
+                <a href="/login">Iniciar Sesión | </a>
+                <a href="/signUp">Registrarse</a>
             </div>
-            <nav>
-                <ul class="menu">
-                    <li><a href="/productList">Hombre</a></li>
-                    <li><a href="/productList">Mujer</a></li>
-                    <li><a href="/productList">Niño/a</a></li>
-                    <li><a href="/productList">Ofertas</a></li>
-                </ul>
-            </nav>
-            <div class="icons">
-                <a href="#" class="favorite"><img src="../media/heart.svg" width="30rem" alt="Favoritos"></a>
-                <a href="#" class="cart"><img src="../media/basket.svg" width="30rem" height="35rem
+            <div class="container-header">
+                <div class="logo">
+                    <a href="/"><img src="../media/logo_prueba.png" alt="Logo de la tienda"></a>
+                </div>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#">Hombre</a></li>
+                        <li><a href="#">Mujer</a></li>
+                        <li><a href="#">Niño/a</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                    </ul>
+                </nav>
+                <div class="icons">
+                    <a href="#" class="favorite"><img src="../media/heart.svg" width="30rem" alt="Favoritos"></a>
+                    <a href="#" class="cart"><img src="../media/basket.svg" width="30rem" height="35rem
                     " alt="Carrito"></a>
+                </div>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+        </header>
+        <div class="container">
+            <div class="form-container">
+                <h2>CREA UNA CUENTA Y ÚNETE AL CLUB</h2>
+                <p>Realiza pedidos sin gastos de envío, consigue códigos descuento y productos exclusivos en Ghosper</p>
+
+                <form action="#">
+                    <div class="input-group">
+                        <label for="nombreCompleto">Nombre Completo:</label>
+                        <input type="text" id="nombreCompleto" name="nombreCompleto" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="correoElectronico">Correo electrónico:</label>
+                        <input type="email" id="correoElectronico" name="correoElectronico" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" id="contrasena" name="contrasena" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="confirmarContrasena">Confirmar contraseña:</label>
+                        <input type="password" id="confirmarContrasena" name="confirmarContrasena" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="numeroContacto">Número de contacto:</label>
+                        <input type="tel" id="numeroContacto" name="numeroContacto" required>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="mantenerSesionIniciada" name="mantenerSesionIniciada">
+                        <label for="mantenerSesionIniciada">Mantener la sesión iniciada</label>
+                    </div>
+
+                    <button type="submit">REGISTRARSE</button>
+                </form>
             </div>
         </div>
-    </header>
-    <div class="container">
-        <div class="form-container">
-            <h2>CREA UNA CUENTA Y ÚNETE AL CLUB</h2>
-            <p>Realiza pedidos sin gastos de envío, consigue códigos descuento y productos exclusivos en Ghosper</p>
-
-            <form action="#">
-                <div class="input-group">
-                    <label for="nombreCompleto">Nombre Completo:</label>
-                    <input type="text" id="nombreCompleto" name="nombreCompleto" required>
-                </div>
-
-                <div class="input-group">
-                    <label for="correoElectronico">Correo electrónico:</label>
-                    <input type="email" id="correoElectronico" name="correoElectronico" required>
-                </div>
-
-                <div class="input-group">
-                    <label for="contrasena">Contraseña:</label>
-                    <input type="password" id="contrasena" name="contrasena" required>
-                </div>
-
-                <div class="input-group">
-                    <label for="confirmarContrasena">Confirmar contraseña:</label>
-                    <input type="password" id="confirmarContrasena" name="confirmarContrasena" required>
-                </div>
-
-                <div class="input-group">
-                    <label for="numeroContacto">Número de contacto:</label>
-                    <input type="tel" id="numeroContacto" name="numeroContacto" required>
-                </div>
-
-                <div class="checkbox-group">
-                    <input type="checkbox" id="mantenerSesionIniciada" name="mantenerSesionIniciada">
-                    <label for="mantenerSesionIniciada">Mantener la sesión iniciada</label>
-                </div>
-
-                <button type="submit">REGISTRARSE</button>
-            </form>
-        </div>
-    </div>
-    <footer>
-        <div class="container-footer">
-            <div class="left-section-footer">
-                <p class="store-name-footer">GHOSPER</p>
-            </div>
+        <footer>
             <div class="right-section-footer">
+                <p class="store-name-footer">GHOSPER</p>
                 <ul class="social-icons-footer">
-                    <li><a href="#"><img src="../media/meta-logo-facebook-svgrepo-com.svg" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="../media/twitter-3-svgrepo-com.svg" alt="Twitter"></a></li>
-                    <li><a href="#"><img src="../media/instagram.svg" alt="Instagram"></a></li>
+                    <a href="#"><img src="../media/meta-logo-facebook-svgrepo-com.svg" alt="Facebook"></a>
+                    <a href="#"><img src="../media/twitter-3-svgrepo-com.svg" alt="Twitter"></a>
+                    <a href="#"><img src="../media/instagram.svg" alt="Instagram"></a>
                 </ul>
             </div>
-        </div>
-        <div class="bottom-footer">
-            <p class="location-footer">Spain</p>
-            <p class="copyright-footer">© 2024 Ghosper. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-    
-    
+            <div class="bottom-footer">
+                <p class="location-footer">Spain</p>
+                <p class="copyright-footer">© 2024 Ghosper. Todos los derechos reservados.</p>
+            </div>
+        </footer>
 
-    <script src="scripts.js"></script>
-</body>
-</html>
+    </body>
 
-    
+    </html>
+
+
 </body>
+
 </html>
