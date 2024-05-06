@@ -28,6 +28,10 @@ body {
   padding: 20px;
 }
 
+nav {
+  margin-left: 30rem;
+}
+
 .logo img {
   max-width: 100px;
 }
