@@ -6,7 +6,7 @@ const connection = mysql.createConnection({
     port: 3306,
     user: 'root',
     password: 'contraseña',
-    database: 'ghosper',
+    database: 'ghosper_database',
 });
 
 connection.connect((err) => {
