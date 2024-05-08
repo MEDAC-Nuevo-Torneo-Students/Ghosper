@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+  }
+  
+  /*HEADER CODE*/
+  .header_gray {
+    background-color: #bababa;
+    height: 5%;
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+  }
+  
+  .header_gray a {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+  
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo img {
+    max-width: 100px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.icons a {
+    margin-left: 20px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/*FOOTER CODE*/
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .right-section-footer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .store-name-footer {
+    max-width: 50px;
+    margin-left: 4.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .social-icons-footer {
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    transform: translateX(70rem);
+  }
+  
+  .social-icons-footer img {
+    width: 55px;
+    height: 40px;
+  }
+  
+  .social-icons-footer img:hover {
+    opacity: 0.7;
+    transition: all .5s;
+  }
+  
+  /* Estilo para el texto de derechos de autor */
+  
+  .bottom-footer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+  }
+  
+  .location-footer {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 4.5rem;
+  }
+
+/*main*/
+
+main header{
+    background-color: #bababa;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 60px;
+}
+
+h2{
+    font-weight: bolder;
+}
+#section-title{
+    font-weight: bolder;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+section{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 0px 70px 0px;
+}
+article img{
+    width: 275px;
+    height: 425px;
+    border-radius: 20px;
+}
+.user{
+    display: flex;
+}
+.user img{
+    width: 20px;
+    height: 20px;
+    margin-top: 12px;
+    margin-right: 3px;
+}
+.description{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+.prize{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}

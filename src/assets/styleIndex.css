@@ -28,6 +28,10 @@ body {
   padding: 20px;
 }
 
+nav {
+  margin-left: 30rem;
+}
+
 .logo img {
   max-width: 100px;
 }
@@ -66,7 +70,6 @@ body.active {
   background-color: rgb(33, 33, 33);
   color: #fff;
 }
-
 
 nav ul {
   list-style: none;
@@ -137,6 +140,35 @@ nav ul {
 
 .menu-vertical li:hover {
   background-color: rgb(255, 255, 255);
+}
+
+/*Searching style*/
+#searchInput {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  width: 250px; /* Ancho fijo del input */
+  box-sizing: border-box;
+  margin: 0;
+  display: inline-block;
+}
+
+#searchButton {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top; /* Alinear verticalmente con el input */
+}
+
+#searchButton:hover {
+  background-color: #000000;
 }
 
 .icon-cart{
@@ -262,16 +294,66 @@ img{
   text-align: center;
 }
 
-/* Estilos de búsqueda */
-#searchInput {
-  padding: 5px;
-  margin-right: 5px;
+.menu li {
+  display: inline-block;
+  margin-right: 20px;
 }
 
-/* Estilos de resultados de búsqueda */
-.element {
-  display: block; /* Asegura que los elementos sean visibles */
-  margin-bottom: 10px; /* Espacio entre los elementos */
+.menu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .menu li {
+    display: inline-block;
+    margin-right: 10px; /* Reducir el margen entre elementos de menú */
+}
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .menu-toggle span {
+    width: 20px; /* Reducir el tamaño de las barras del menú desplegable */
+}
+
+  .menu-toggle.open .icon-bar {
+    background-color: #ff0000;
+  }
+
+  .menu-toggle.open .icon-bar:first-child {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-toggle.open .icon-bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.open .icon-bar:last-child {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
 }
 
 /*BODY STYLES*/
@@ -297,14 +379,19 @@ body {
 }
 
 .index_container {
+  display: grid;
   margin: 30px;
 }
 
 .clothes_container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 0;
   grid-row-gap: 0;
+}
+
+#trousers {
+  display: block;
 }
 
 .item img {
