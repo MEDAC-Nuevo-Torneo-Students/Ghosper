@@ -8,6 +8,7 @@ router
     .get('/signUp' ,mirutaController.getSignUp)
     .get('/ghosperClub' ,mirutaController.getGhosperClub)
     .get('/dunk_man' ,mirutaController.getdunk_man)
+    .post('/register', mirutaController.getSignUp)
     .get('/dunk_man/dunk1' ,mirutaController.getDunk1)
     .get('/dunk_man/dunk2' ,mirutaController.getDunk2)
     .get('/dunk_man/dunk3' ,mirutaController.getDunk3)

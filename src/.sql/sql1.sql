@@ -2,6 +2,12 @@
 CREATE DATABASE IF NOT EXISTS ghosper_database;
 USE ghosper_database;
 
+create table Usuario (
+	nombre VARCHAR(50) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    contraseña CHAR(60) NOT NULL,
+    telefono VARCHAR(255)
+);
 -- Create the User table
 CREATE TABLE User (
     ID INT AUTO_INCREMENT PRIMARY KEY,
@@ -62,17 +68,4 @@ CREATE TABLE Search (
     Results TEXT
 );
 
--- Insert some initial records
-INSERT INTO User (Username, Password, Email, Address, PaymentMethod) 
-VALUES ('user1', 'password1', 'user1@example.com', '123 Street, City', 'Credit Card'),
-       ('user2', 'password2', 'user2@example.com', '456 Avenue, City', 'PayPal');
-
-INSERT INTO Product (Name, Description, Price, Stock, Brand) 
-VALUES ('Shirt', 'Short-sleeved cotton shirt', 19.99, 50, 'Brand A'),
-       ('Pants', 'Men\'s denim pants', 29.99, 30, 'Brand B');
-
-INSERT INTO Purchase (User_ID, Product_ID, Quantity) 
-VALUES (1, 1, 2),
-       (2, 2, 1);
-
-
+select * from user;
